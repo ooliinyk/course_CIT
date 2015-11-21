@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - mydbtest@localhost" uuid="33db082b-55e8-4d71-8b2a-58ed969187e4">
+    <database-info product="MySQL" version="5.7.9-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="mydbtest"/>
+    <table name="departments" schema="" catalog="mydbtest" type="TABLE">
+      <column name="department_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="department_name" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="telephone" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="DEAN" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="department_id"/>
+    </table>
+    <table name="groups" schema="" catalog="mydbtest" type="TABLE">
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="group_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="group_id"/>
+    </table>
+    <table name="lol" schema="" catalog="mydbtest" type="TABLE">
+      <column name="FIRST_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="LAST_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EMAIL" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="SEX" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="GROUP_NUM" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="AGE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="DEPARTMENT_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="FIRST_NAME"/>
+    </table>
+    <table name="sheet" schema="" catalog="mydbtest" type="TABLE">
+      <column name="sheet_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="STUDENT_ID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="LAST_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SUBJECT_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="MARK" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="SUBJECT_ID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="DEPARTMENT_ID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="DEPARTMENT_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="GROUP_ID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="GROUP_NUM" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="TEACHER_ID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="TEACHER_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="sheet_id"/>
+    </table>
+    <table name="students" schema="" catalog="mydbtest" type="TABLE">
+      <column name="STUDENTS_ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="FIRST_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="LAST_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="EMAIL" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="SEX" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="GROUP_NUM" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="AGE" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="DEPARTMENT_NAME" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="STUDENTS_ID"/>
+    </table>
+    <table name="subjects" schema="" catalog="mydbtest" type="TABLE">
+      <column name="subjects_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="subject_name" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="subjects_id"/>
+    </table>
+    <table name="teachers" schema="" catalog="mydbtest" type="TABLE">
+      <column name="teachers_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Surname" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="subject_name" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="teachers_id"/>
+    </table>
+    <table name="users" schema="" catalog="mydbtest" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="email" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+      <servlet>
+        <servlet-name>Filler</servlet-name>
+        <servlet-class>comm.Filler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Filler</servlet-name>
+        <url-pattern>/filler</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Ser</servlet-name>
+        <servlet-class>comm.Test2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ser</servlet-name>
+        <url-pattern>/Ser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>comm.Search</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>SearchTeacher</servlet-name>
+    <servlet-class>servlets.searchTeacher</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>SearchTeacher</servlet-name>
+        <url-pattern>/searchTeacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addStudent</servlet-name>
+        <servlet-class>servlets.AddStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addStudent</servlet-name>
+        <url-pattern>/addStudent</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addTeacher</servlet-name>
+        <servlet-class>servlets.addTeacher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addTeacher</servlet-name>
+        <url-pattern>/addTeacher</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>searchSheetnew</servlet-name>
+        <servlet-class>servlets.SearchSheet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchSheetnew</servlet-name>
+        <url-pattern>/searchSheetnew</url-pattern>
+    </servlet-mapping>
+
+
+    <session-config>
+
+        <session-timeout>1</session-timeout>
+
+    </session-config>
+
+</web-app>
